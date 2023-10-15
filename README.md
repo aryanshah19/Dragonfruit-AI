@@ -2,12 +2,15 @@
 
 ## Summary of Compression Techniques
 
-The table below summarizes the sizes of the original and compressed images using Run-Length Encoding (RLE), Lempel-Ziv-Welch (LZW), and Bit Packing compression techniques:
+The table below summarizes the sizes of the original and compressed images using Run-Length Encoding (RLE), Lempel-Ziv-Welch (LZW), and Bit Packing compression techniques, along with their respective Compression Ratios:
 
-| Image Type | Original Size (bytes) | RLE Compressed Size (bytes) | LZW Compressed Size (bytes) | Bit Packing Compressed Size (bytes) |
-|------------|-----------------------|-----------------------------|-----------------------------|-------------------------------------|
-| Blob       | 10128                 | 1176                        | 2520                        | 1250                                |
-| Dye        | 10128                 | 6072                        | 4216                        | 1250                                |
+| Image Type | Original Size (bytes) | RLE Compressed Size (bytes) | RLE Compression Ratio | LZW Compressed Size (bytes) | LZW Compression Ratio | Bit Packing Compressed Size (bytes) | Bit Packing Compression Ratio |
+|------------|-----------------------|-----------------------------|----------------------|-----------------------------|----------------------|-------------------------------------|-------------------------------|
+| Blob       | 10128                 | 1176                        | 8.61                 | 2520                        | 4.02                 | 1250                                | 8.10                          |
+| Dye        | 10128                 | 6072                        | 1.67                 | 4216                        | 2.40                 | 1250                                | 8.10                          |
+
+These metrics enable a comprehensive evaluation of the efficiency of each compression technique in reducing image size while maintaining the quality and integrity of the image data.
+
 
 ### Observations:
 
